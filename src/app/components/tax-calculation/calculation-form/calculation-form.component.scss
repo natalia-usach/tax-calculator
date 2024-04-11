@@ -1,0 +1,15 @@
+:host {
+  form {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 15px;
+    }
+
+    button {
+      align-self: start;
+      margin-left: 15px;
+    }
+  }
+}
