@@ -5,7 +5,9 @@
     padding: 30px;
 
     ::ng-deep {
-      mat-label, .mdc-text-field__input, .mdc-button__label {
+      mat-label,
+      .mdc-text-field__input,
+      .mdc-button__label {
         font-size: 18px;
       }
 

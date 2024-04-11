@@ -7,9 +7,11 @@
     "build": "ng build",
     "lint": "ng lint --quiet",
     "lint:fix": "ng lint --fix --quiet",
+    "prettier": "prettier --check \"**/*.{js,json,ts,scss,html}\" --ignore-path .gitignore",
+    "prettier:fix": "prettier --write \"**/*.{js,json,ts,scss,html}\" --ignore-path .gitignore",
+    "fix": "npm run prettier:fix && npm run lint:fix",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test --source-map=false",
-    "prepare": "husky install"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -48,13 +50,14 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.4.2",
-    "husky": "^8.0.0"
+    "prettier": "^3.2.5",
+    "typescript": "~5.4.2"
   }
 }

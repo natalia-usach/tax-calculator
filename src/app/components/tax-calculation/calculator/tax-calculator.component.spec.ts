@@ -1,5 +1,5 @@
-import { InitialTaxCalculationTableData } from "../../../constants";
-import { TaxCalculatorComponent } from "./tax-calculator.component";
+import { InitialTaxCalculationTableData } from '../../../constants';
+import { TaxCalculatorComponent } from './tax-calculator.component';
 import { MockStore, createMockStore } from '@ngrx/store/testing';
 
 describe('TaxCalculatorComponent', () => {

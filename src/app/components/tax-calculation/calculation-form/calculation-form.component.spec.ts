@@ -1,5 +1,5 @@
-import { FormBuilder } from "@angular/forms";
-import { TaxCalculationFormComponent } from "./calculation-form.component";
+import { FormBuilder } from '@angular/forms';
+import { TaxCalculationFormComponent } from './calculation-form.component';
 
 describe('TaxCalculationFormComponent', () => {
   let component: TaxCalculationFormComponent;

@@ -1,4 +1,4 @@
-import { TaxBandRates, TaxBandsMaxValues } from "../constants";
+import { TaxBandRates, TaxBandsMaxValues } from '../constants';
 
 export function getGrossMonthlySalary(annualSalary: number): number {
   return +(annualSalary / 12).toFixed(2);
@@ -16,11 +16,11 @@ export function getAnnualTaxPaid(annualSalary: number): number {
     let salaryMinused = annualSalary - TaxBandsMaxValues.A;
 
     if (salaryMinused <= TaxBandsMaxValues.B) {
-      annualTaxPaid = salaryMinused / 100 * TaxBandRates.B;
+      annualTaxPaid = (salaryMinused / 100) * TaxBandRates.B;
     } else {
-      salaryMinused-= TaxBandsMaxValues.B;
-      annualTaxPaid = TaxBandsMaxValues.B / 100 * TaxBandRates.B;
-      annualTaxPaid+= salaryMinused / 100 * TaxBandRates.C;
+      salaryMinused -= TaxBandsMaxValues.B;
+      annualTaxPaid = (TaxBandsMaxValues.B / 100) * TaxBandRates.B;
+      annualTaxPaid += (salaryMinused / 100) * TaxBandRates.C;
     }
   }
 
@@ -38,5 +38,5 @@ export function getNetAnnualSalary(annualSalary: number): number {
 }
 
 export function getNetMonthlySalary(annualSalary: number): number {
- return +(getNetAnnualSalary(annualSalary) / 12).toFixed(2);
+  return +(getNetAnnualSalary(annualSalary) / 12).toFixed(2);
 }

@@ -5,7 +5,4 @@ import { taxCalculationFeatureKey } from './tax-calculation.reducer';
 
 const selectTaxCalculationState = createFeatureSelector<TaxCalculationState>(taxCalculationFeatureKey);
 
-export const selectTaxCalculationTableData = createSelector(
-  selectTaxCalculationState,
-  ({ tableData })=> tableData,
-);
+export const selectTaxCalculationTableData = createSelector(selectTaxCalculationState, ({ tableData }) => tableData);

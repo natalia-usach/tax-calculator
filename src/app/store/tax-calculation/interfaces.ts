@@ -1,4 +1,4 @@
-import { TaxCalculationTableElement } from "../../interfaces";
+import { TaxCalculationTableElement } from '../../interfaces';
 
 export interface TaxCalculationState {
   tableData: TaxCalculationTableElement[];

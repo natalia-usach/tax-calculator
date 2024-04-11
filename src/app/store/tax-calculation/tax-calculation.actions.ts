@@ -1,3 +1,6 @@
-import { createAction, props } from "@ngrx/store";
+import { createAction, props } from '@ngrx/store';
 
-export const getTaxCalculations = createAction('[Tax Calculation] Get Tax Calculations', props<{ annualSalary: number }>());
+export const getTaxCalculations = createAction(
+  '[Tax Calculation] Get Tax Calculations',
+  props<{ annualSalary: number }>(),
+);

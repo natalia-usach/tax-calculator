@@ -12,5 +12,11 @@ export const initialState: TaxCalculationState = {
 
 export const taxCalculationReducer = createReducer(
   initialState,
-  on(getTaxCalculations, (state, { annualSalary }): TaxCalculationState => ({ ...state, tableData: mapTaxCalculationTableData(annualSalary) })),
+  on(
+    getTaxCalculations,
+    (state, { annualSalary }): TaxCalculationState => ({
+      ...state,
+      tableData: mapTaxCalculationTableData(annualSalary),
+    }),
+  ),
 );

@@ -1,4 +1,11 @@
-import { getAnnualTaxPaid, getGrossAnnualSalary, getGrossMonthlySalary, getMonthlyTaxPaid, getNetAnnualSalary, getNetMonthlySalary } from "./tax-calculator";
+import {
+  getAnnualTaxPaid,
+  getGrossAnnualSalary,
+  getGrossMonthlySalary,
+  getMonthlyTaxPaid,
+  getNetAnnualSalary,
+  getNetMonthlySalary,
+} from './tax-calculator';
 
 describe('Tax Calculator Helpers', () => {
   describe('getGrossMonthlySalary', () => {

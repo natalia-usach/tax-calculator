@@ -1,6 +1,6 @@
-import { InitialTaxCalculationTableData } from "../../constants";
-import { TaxCalculationState } from "./interfaces";
-import { selectTaxCalculationTableData } from "./tax-calculation.selectors";
+import { InitialTaxCalculationTableData } from '../../constants';
+import { TaxCalculationState } from './interfaces';
+import { selectTaxCalculationTableData } from './tax-calculation.selectors';
 
 describe('Tax Calculation Selectors', () => {
   let state: TaxCalculationState;

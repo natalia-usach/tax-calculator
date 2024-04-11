@@ -1,4 +1,4 @@
-import { TaxCalculationTableComponent } from "./calculation-table.component";
+import { TaxCalculationTableComponent } from './calculation-table.component';
 
 describe('TaxCalculationTableComponent', () => {
   let component: TaxCalculationTableComponent;
